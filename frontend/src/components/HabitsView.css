@@ -1,0 +1,29 @@
+.habits-container {
+    width: 90%;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-row {
+    width: 100%;
+    background-color: var(--third-color);
+    padding: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.label-row-middle {
+    width: 100%;
+    background-color: var(--third-color);
+    padding: 10px 0 0 10px;
+    /* border-radius: 10px 10px 0 0; */
+}
