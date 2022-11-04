@@ -25,13 +25,13 @@
 }
 
 .table-body{
-    height: 390px;
+    height: 380px;
     display: flex;
     justify-content: space-around;
 }
 
 .table-column{
-    height: 390px;
+    height: 380px;
     width: 100%;
     display: flex;
     flex-direction: column;
