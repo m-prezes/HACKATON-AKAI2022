@@ -1,13 +1,16 @@
 .main-view{
     height: 60%;
     width: 100%;
-    background-color: blue;
+    background-color: var(--background-color);
     display: flex;
 }
 
 .left-main-view {
     width: 60%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-main-view {
