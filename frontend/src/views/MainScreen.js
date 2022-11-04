@@ -1,10 +1,13 @@
+import Hero from '../components/Hero';
+import MainView from '../components/MainView';
 import './MainScreen.css'
 
 function MainScreen(props) {
     return (
-        <div>
-            Main
-        </div>
+        <>       
+        <Hero />
+        <MainView />
+        </>
     )
 }
 
