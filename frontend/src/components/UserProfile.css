@@ -1,0 +1,55 @@
+.user-image{
+    width: 220px;
+    height: auto; 
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user{
+    height: 100%;
+}
+
+.user_icon_container{
+    padding: 10px;
+    position: relative;
+}
+
+.points-progress-bar{
+    height: 25px;
+    width: 80%;
+}
+
+.user-level{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 50%;
+    position:absolute; 
+    right: 165px; 
+    bottom: 5px;
+    border: 5px solid var(--medium-red);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.user-coins{
+    background-color: white;
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+    position:absolute; 
+    right: 115px; 
+    bottom: 75px;
+    border-radius: 15px;
+    border: 5px solid var(--medium-red);
+    font-weight: 600;
+    font-size: 20px;
+}

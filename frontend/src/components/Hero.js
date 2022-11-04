@@ -1,15 +1,18 @@
-import { Row, Col } from 'react-bootstrap';
 import './Hero.css'
+import UserProfile from './UserProfile';
+import {Row, Col, Container} from "react-bootstrap"
 
 function Hero(props) {
     return (
-        <div className='hero'>
-            <Row>
-                <Col className="md-4">Hejka</Col>
-                <Col className="md-4">Hejka</Col>
-                <Col className="md-4">Joł</Col>
-            </Row>
-        </div>
+        <Container fluid className='hero'>
+           <Row>
+                <Col md={4}>fsdf</Col>
+                <Col md={4}>
+                    <UserProfile />
+                </Col>
+                <Col md={4}>fsdf</Col>
+           </Row>
+        </Container>
     )
 }
 
