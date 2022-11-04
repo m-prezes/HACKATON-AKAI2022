@@ -1,4 +1,13 @@
 .main-view{
     height: 60%;
+    width: 100%;
     background-color: blue;
+}
+
+.left-main-view {
+    width: 60%;
+}
+
+.right-main-view {
+    width: 40%;
 }
