@@ -3,7 +3,7 @@ import './MainScreen.css'
 function MainScreen(props) {
     return (
         <div>
-            <p>Main</p>
+            Main
         </div>
     )
 }
