@@ -10,9 +10,24 @@ import travel from '../assets/travel.png'
 
 const sampleData = [
     {
+        "day":  0,
+        "activity": maps,
+        "done": true
+    },
+    {
+        "day":  0,
+        "activity": mind,
+        "done": false
+    },
+    {
+        "day":  0,
+        "activity": travel,
+        "done": true
+    },
+    {
        "day":  0,
        "activity": baseball,
-       "done": false
+       "done": true
     },
     {
         "day":  0,
@@ -21,8 +36,38 @@ const sampleData = [
     },
     {
         "day":  1,
-        "activity": chemistry,
+        "activity": maps,
         "done": false
+    },
+    {
+        "day":  1,
+        "activity": mind,
+        "done": true
+    },
+    {
+        "day":  1,
+        "activity": travel,
+        "done": false
+    },
+    {
+        "day":  1,
+        "activity": chemistry,
+        "done": true
+    },
+    {
+        "day":  2,
+        "activity": maps,
+        "done": false
+    },
+    {
+        "day":  2,
+        "activity": mind,
+        "done": true
+    },
+    {
+        "day":  2,
+        "activity": travel,
+        "done": true
     },
     {
         "day":  2,
@@ -31,18 +76,68 @@ const sampleData = [
     },
     {
         "day":  3,
-        "activity": fitness,
-        "done": true
-    },
-    {
-        "day":  3,
         "activity": maps,
         "done": false
     },
     {
-        "day":  4,
+        "day":  3,
         "activity": mind,
         "done": false
+    },
+    {
+        "day":  3,
+        "activity": travel,
+        "done": true
+    },
+    {
+        "day":  3,
+        "activity": fitness,
+        "done": true
+    },
+    {
+        "day":  4,
+        "activity": maps,
+        "done": true
+    },
+    {
+        "day":  4,
+        "activity": mind,
+        "done": true
+    },
+    {
+        "day":  4,
+        "activity": travel,
+        "done": true
+    },
+    {
+        "day":  5,
+        "activity": maps,
+        "done": false
+    },
+    {
+        "day":  5,
+        "activity": mind,
+        "done": true
+    },
+    {
+        "day":  5,
+        "activity": travel,
+        "done": true
+    },
+    {
+        "day":  6,
+        "activity": maps,
+        "done": true
+    },
+    {
+        "day":  6,
+        "activity": mind,
+        "done": false
+    },
+    {
+        "day":  6,
+        "activity": travel,
+        "done": true
     },
     {
         "day":  6,
@@ -50,9 +145,9 @@ const sampleData = [
         "done": false
     },
     {
-        "day":  0,
+        "day":  6,
         "activity": basketball,
-        "done": false
+        "done": true
     }
 ]
 

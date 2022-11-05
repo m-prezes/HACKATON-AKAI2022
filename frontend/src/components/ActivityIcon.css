@@ -1,6 +1,6 @@
 .activity-icon-container{
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +36,16 @@
 
 .activity-icon-container-margin{
     margin-left: 10px;
+}
+
+.gray-cell{
+    background-color: var(--gray);
+}
+
+.green-cell{
+    background-color: var(--green);
+}
+
+.red-cell{
+    background-color: var(--red);
 }

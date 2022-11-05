@@ -3,6 +3,7 @@ import ActivityIcon from './ActivityIcon';
 
 import sampleData from '../sample_data/sampleActivityInfo.js';
 import { getWeekAndCurrentDay } from '../utils/getWeekAndCurrentDay';
+import { getActivityColor } from '../utils/getActivityColor';
 
 function Calendar(props) {
 
@@ -32,6 +33,7 @@ function Calendar(props) {
                                             <div className='table-cell'>
                                                 <ActivityIcon 
                                                     img={activity.activity}
+                                                    color={getActivityColor(activity, today)}
                                                 />
                                             </div>
                                             )
