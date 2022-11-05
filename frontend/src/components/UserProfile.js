@@ -1,21 +1,21 @@
-import { Container, Row, Badge } from 'react-bootstrap';
+import { Container, Row, Button } from 'react-bootstrap';
 import './UserProfile.css'
 import userImage from '../assets/avatar.jpg'
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import goldMedal from '../assets/gold-medal.png';
 import coinsImage from '../assets/coins-image.png'
 
-function UserProfile(props) {
+function UserProfile({handleMainViewState}) {
     return (
        <Container>
         <Row>
             <Container className="center user_icon_container" fluid>
                 <div>
                     <img src={userImage} alt="user_icon" className='user-image'/>
-                        <Badge bg="warning" text="dark" className='user-coins center'>
+                        <Button variant='warning' className='user-coins center' value='shop' onClick={(e) => handleMainViewState(e)}>
                             2137
                             <img src={coinsImage} className="coins-image"/>
-                        </Badge>
+                        </Button>
                     <div className='user-level center' style={{ backgroundImage: `url(${goldMedal})` }}>
                         <img src={goldMedal} className='user-level-icon'/>
                     </div>
