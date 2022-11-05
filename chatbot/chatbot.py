@@ -133,7 +133,8 @@ def iterative_generation(model, habit, num_iter : int = 2):
     generated_answer = model.large_language_model.query({"inputs": prompt, "max_num_tokens": 200})
     for _ in range(num_iter):
         generated_answer = model.large_language_model.query({"inputs": generated_answer[0]["generated_text"], "max_num_tokens": 200})
-        
+    
+    # generated_answer = " ".join(generated_answer.split()[len(prompt.split()):])
     return generated_answer
     
     
