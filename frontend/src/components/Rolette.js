@@ -13,7 +13,7 @@ import prize4 from '../assets/shop/new-avatar.png'
 import coins from '../assets/coins-image.png'
 
 function Roulette() {
-    const [ready, setReady] = useState(false)
+    const [ready, setReady] = useState(true)
 
     const prizes = [
     {
