@@ -1,5 +1,5 @@
 import './DayStrike.css'
-import {Row, Col, Container} from "react-bootstrap"
+import { Col, Container} from "react-bootstrap"
 
 function DayStrike({day, isChecked, isToday}) {
     return (
