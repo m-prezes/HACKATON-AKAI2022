@@ -21,8 +21,9 @@ function UserProfile({handleMainViewState}) {
                     </button>
                 </div>
             </Container>
-            <Container fluid className="center">
+            <Container fluid className="center progress-bar-container">
                 <ProgressBar animated variant="warning" now={40} className="points-progress-bar"/>
+                <p className='level-tag'>Level 5</p>
             </Container>
                 
         </Row>

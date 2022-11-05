@@ -12,7 +12,7 @@ function Badges() {
             <img src={b2} className="badge-picture"/>
             <span className='clear-p margin-left'>Milestone from second level!</span><br/>
             <img src={b3} className="badge-picture"/>
-            <span className='clear-p margin-left'>Hard-working gym </span>
+            <span className='clear-p margin-left'>Hard-working gym-rat </span>
         </div>
     )
 }
