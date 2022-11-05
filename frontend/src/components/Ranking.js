@@ -10,12 +10,22 @@ import { useState } from 'react'
 function Ranking(props) {
 
     const [flag, setFlag] = useState(false);
+    const [rankInfo, setRankInfo] = useState(sampleRankingInfo);
+
+    const handleClick = () => {
+        if (flag) {
+            setRankInfo(sampleRankingInfo2);
+        } else {
+            setRankInfo(sampleRankingInfo);
+        }
+        setFlag(!flag);
+    }
 
     return (
         <Container className='ranking-container center'>
             <Container fluid className='ranking'>
                 <div className='ranking-rows'>
-                        {sampleRankingInfo.map((row) => (
+                        {rankInfo.map((row) => (
                             <Container fluid>
                                 <Row className={`ranking-row ${sampleUserInfo.name === row.name ? 'is-user' : ''}`}>
                                     <Col md={2} className='center'>{row.rank}</Col>
@@ -30,15 +40,18 @@ function Ranking(props) {
                     <Row>
                         <Col md={3} className="center">
                             <div className="arrow-container">
-                                <img src={left_arrow} alt='' className='arrow'/>
+                                <img src={left_arrow} alt='' className='arrow' onClick={handleClick}/>
                             </div>
                         </Col>
                         <Col md={6} className="center group-container">
-                            Hackaton AKAI2022
+                            {flag 
+                            ? 'Hackaton AKAI2022'
+                            : 'Studenciaki'}
+                            
                         </Col>
                         <Col md={3} className="center">
                             <div className="arrow-container">
-                                <img src={right_arrow} alt='' className='arrow'/>
+                                <img src={right_arrow} alt='' className='arrow' onClick={handleClick}/>
                             </div>
                         </Col>
                     </Row>

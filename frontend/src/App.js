@@ -16,12 +16,12 @@ function App() {
 
   const store = configureStore({reducer: messageReducer});
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 3000);
+    }, 4000);
   }, [])  
   
   return (

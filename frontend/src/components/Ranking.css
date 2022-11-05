@@ -31,6 +31,7 @@
 }
 .arrow{
     width: 20px;
+    cursor: pointer;
 }
 
 .ranking-row{
