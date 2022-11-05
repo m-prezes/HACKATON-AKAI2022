@@ -2,6 +2,7 @@ import { Card } from 'react-bootstrap';
 import Calendar from './Calendar';
 import ShopCard from './Card';
 import HabitsView from './HabitsView';
+import Roulette from './Rolette';
 import './MainView.css'
 
 function MainView({mainViewState, handleMainViewState}) {
@@ -20,7 +21,7 @@ function MainView({mainViewState, handleMainViewState}) {
         {mainViewState === 'shop' && (
             <>
                 <div className='roulette-container'>
-                    hej
+                    <Roulette />
                 </div>
                 <div className='shop-container'>
                     <HabitsView first="Your wardrobe" second="Shop" type="shop"/>

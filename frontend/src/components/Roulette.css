@@ -1,0 +1,28 @@
+.roulette-start{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.roulette-con{
+    background-color: white;
+    padding: 10px 0;
+    border-radius: var(--border-radius);
+    border: 5px solid var(--secondary-color);
+
+}
+
+.roulette-header{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.won-image{
+    height: 250px;
+    width: auto;
+}
+
+.try-again{
+    font-weight: 500;
+}
