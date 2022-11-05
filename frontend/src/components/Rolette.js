@@ -12,7 +12,7 @@ import prize4 from '../assets/shop/new-avatar.png'
 
 import coins from '../assets/coins-image.png'
 
-function Roulette() {
+function Roulette(props) {
     const [ready, setReady] = useState(true)
 
     const prizes = [
@@ -62,6 +62,7 @@ function Roulette() {
   };
 
   const handlePrizeDefined = () => {
+    props.handleSetUserInfo({target: {value: prizeList[winPrizeIndex].image} },'item')
     setReady(false)
   };
 

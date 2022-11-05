@@ -5,13 +5,13 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import goldMedal from '../assets/gold-medal.png';
 import coinsImage from '../assets/coins-image.png'
 
-function UserProfile({handleMainViewState}) {
+function UserProfile({handleMainViewState, userInfo}) {
     return (
        <Container>
         <Row>
             <Container className="center user_icon_container" fluid>
                 <div>
-                    <img src={userImage} alt="user_icon" className='user-image'/>
+                    <img src={userInfo.image} alt="user_icon" className='user-image'/>
                         <Button variant='warning' className='user-coins center' value='shop' onClick={(e) => handleMainViewState(e)}>
                             2137
                             <img src={coinsImage} className="coins-image"/>

@@ -30,7 +30,10 @@ function HabitsView(props) {
                     </>
                     :
                     <div className='cards-line'>
-                        <ShopCard src={avatar} price="Put it on" title="Basic avatar"/>
+                        {props.userInfo.items.map(item => (
+                            <ShopCard src={item} price="Put it on" title="Basic avatar" handleSetUserInfo={props.handleSetUserInfo}/>
+                        ))}
+                        
                     </div>
                   }
 

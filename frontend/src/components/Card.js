@@ -12,7 +12,7 @@ function ShopCard(props) {
     //     <Button variant="primary">$136</Button>
     //   </Card.Body>
     // </Card>
-    <div className='card-style'>
+    <div className='card-style' onClick={() => {props.handleSetUserInfo({target:{value:props.src}}, 'image')}}>
         <img src={props.src} alt="obr" className='card-image'/>
         <div className='card-title'>{props.title}</div>
         <Button variant="primary" className='button-shop'>{props.price}</Button>
