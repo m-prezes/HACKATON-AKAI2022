@@ -1,11 +1,20 @@
+import axios from "axios";
+
 export const sendRequestAndGetResponse = async (chatMessage) => {
-    const config = {
-        method: 'POST',
+    let res = await axios({
+        url: 'http://172.23.96.1:8000',
+        method: 'post',
+        data: {message: chatMessage},
+        timeout: 8000,
         headers: {
-            'Accept': 'application/json',
             'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(chatMessage)
-    } 
-    const response = await fetch("tuurl", config)
-}
+        }
+    })
+    if(res.status == 200){
+        // test for status you want, etc
+        console.log(res.status)
+    }    
+    // Don't forget to return something   
+    return res.data
+    
+}   
