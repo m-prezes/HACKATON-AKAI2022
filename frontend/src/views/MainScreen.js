@@ -8,8 +8,8 @@ function MainScreen(props) {
     const [mainViewState, setMainViewState] = useState('habits');
 
     function handleMainViewState(event) {
-        console.log(event.target.value)
-        setMainViewState(event.target.value);
+        console.log(event.currentTarget.value)
+        setMainViewState(event.currentTarget.value);
     }
 
     return (
