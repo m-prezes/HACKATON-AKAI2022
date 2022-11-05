@@ -13,13 +13,13 @@ import MainScreen from './views/MainScreen';
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
     }, 3000);
-  }, [])
+  }, [])  
   
   return (
     <div className="app">

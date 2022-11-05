@@ -1,0 +1,11 @@
+.day-strike-checkbox{
+    background-color: rgb(162, 162, 162);
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--third-color);
+    border-radius: 50%;
+}
+
+.day-string{
+    font-weight: 600;
+}

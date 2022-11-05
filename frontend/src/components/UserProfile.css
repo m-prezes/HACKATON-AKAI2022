@@ -19,6 +19,7 @@
 .user_icon_container{
     padding: 10px;
     position: relative;
+    display: flex;
 }
 
 .points-progress-bar{

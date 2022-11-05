@@ -1,0 +1,19 @@
+.strike-component-container{
+    padding: 80px;
+}
+
+.strike-component{
+    background-color: var(--background-color);
+    padding: 10px 0;
+    border-radius: var(--border-radius);
+}
+
+.level-icon-container{
+    display: flex;
+    margin-bottom: 10px;
+}
+.level{
+    width: 100px;
+    height: auto; 
+}
+
