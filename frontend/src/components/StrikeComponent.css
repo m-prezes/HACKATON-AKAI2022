@@ -1,19 +1,30 @@
 .strike-component-container{
     padding: 80px;
+    
 }
 
 .strike-component{
     background-color: var(--background-color);
     padding: 10px 0;
     border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .level-icon-container{
     display: flex;
     margin-bottom: 10px;
+    border-radius: 5px 5px 0 0 ;
 }
 .level{
     width: 100px;
     height: auto; 
+}
+
+.day-strike-container{
+    margin: 0 10px;
+    background-color: #ffc107;
+    padding: 3px;
+    border-radius: var(--border-radius);
 }
 
