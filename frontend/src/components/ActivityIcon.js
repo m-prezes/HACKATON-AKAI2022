@@ -1,10 +1,10 @@
 import './ActivityIcon.css'
 
-function ActivityIcon({img, color = ''}){
+function ActivityIcon({img, color = '', isMargin = false}){
 
     return (
         <>
-            <div className={`activity-icon-container ${color}`}>
+            <div className={`activity-icon-container ${color} ${isMargin ? 'activity-icon-container-margin' : ''}`}>
                 <img
                     className='activity-icon'  
                     src={img} 
