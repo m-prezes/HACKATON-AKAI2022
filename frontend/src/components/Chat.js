@@ -7,7 +7,7 @@ function Chat(props) {
 
     const [checked, setChecked] = useState(false);
     const [value, setValue] = useState("");
-    const [chatMess, setChatMess] = useState(chatMessages);
+    const chatMess = props.store.getState();
 
     const updateScroll = () => {
         var element = document.getElementById("chat-collapse");
@@ -35,14 +35,11 @@ function Chat(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const newArr = chatMess.map(element => element);
-        newArr.push(
-            {
-                "owner": "user",
-                "message": value
-            }
-        )
-        setChatMess(newArr);
+        props.store.dispatch({
+            type: 'ADD_MESSAGE',
+            owner: 'user',
+            message: value
+        })
         setTimeout(() => {
             updateScroll();
         }, 25)
@@ -52,14 +49,11 @@ function Chat(props) {
     const handleEnterClick = (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
-            const newArr = chatMess.map(element => element);
-            newArr.push(
-                {
-                    "owner": "user",
-                    "message": value
-                }
-            )
-            setChatMess(newArr);
+            props.store.dispatch({
+                type: 'ADD_MESSAGE',
+                owner: 'user',
+                message: value
+            })
             setTimeout(() => {
                 updateScroll();
             }, 25)
