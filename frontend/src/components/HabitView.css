@@ -12,7 +12,8 @@
 .habit-text {
     /* padding-top: 4px; */
     margin: 0;
-    margin-left: 10px;
+    margin-left: 20px;
+    width: 40%;
 }
 
 .left-margin {
