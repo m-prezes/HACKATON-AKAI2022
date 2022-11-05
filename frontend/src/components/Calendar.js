@@ -1,16 +1,13 @@
 import './Calendar.css'
 import ActivityIcon from './ActivityIcon';
-import baseball from '../assets/baseball.png'
-import basketball from '../assets/basketball.png'
-import chemistry from '../assets/chemistry.png'
-import cycling from '../assets/cycling.png'
-import eating from '../assets/eating.png'
-import fitness from '../assets/fitness.png'
-import maps from '../assets/maps.png'
-import mind from '../assets/mind.png'
-import travel from '../assets/travel.png'
+
+import sampleData from '../sample_data/sampleActivityInfo.js';
+import { getWeekAndCurrentDay } from '../utils/getWeekAndCurrentDay';
 
 function Calendar(props) {
+
+    const [week, today] = getWeekAndCurrentDay();
+
     return (
         <>
             <div className='calendar-container'>
@@ -25,66 +22,23 @@ function Calendar(props) {
                         <div className='table-cell'>Sun</div>
                     </div>
                     <div className='table-body'>
-                        <div className='table-column'>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={baseball}
-                                />
-                            </div>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={basketball}
-                                />
-                            </div>
-                        </div>
-                        <div className='table-column'>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={chemistry}
-                                />
-                            </div>
-                        </div>
-                        <div className='table-column'>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={cycling}
-                                />
-                            </div>
-                        </div>
-                        <div className='table-column'>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={fitness}
-                                />
-                            </div>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={maps}
-                                />
-                            </div>
-                        </div>
-                        <div className='table-column'>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={mind}
-                                />
-                            </div>
-                        </div>
-                        <div className='table-column'>
-    
-                        </div>
-                        <div className='table-column'>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={baseball}
-                                />
-                            </div>
-                            <div className='table-cell'>
-                                <ActivityIcon 
-                                    img={basketball}
-                                />
-                            </div>
-                        </div>
+                        {week.map(day => {
+                            return(
+                                <div key={day} className={`table-column${day === today ? ' gray-column' : ''}`}>
+                                    {sampleData
+                                        .filter(activity => activity.day === day)
+                                        .map(activity => {
+                                            return (
+                                            <div className='table-cell'>
+                                                <ActivityIcon 
+                                                    img={activity.activity}
+                                                />
+                                            </div>
+                                            )
+                                        })}
+                                </div>
+                            )
+                        })}                
                     </div>
                 </div>
             </div>
