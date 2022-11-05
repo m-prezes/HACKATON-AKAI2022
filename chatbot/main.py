@@ -32,7 +32,12 @@ async def inactive_user_engagment(query : Request):
 @app.post("/")
 async def get_conversational_chatbot_response(query : Request):
     message = await query.json()
-    return {'response': sarcastic_chatbot(message['message'])}
+    answer = sarcastic_chatbot(message['message'])
+    last_dot_idx = answer.rfind('.')
+    if last_dot_idx == -1:
+        last_dot_idx = len(answer)
+    better_answer = answer[:last_dot_idx + 1]
+    return {'response': better_answer}
     
 
 @app.post('/fd')
