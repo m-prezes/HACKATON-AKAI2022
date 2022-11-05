@@ -1,8 +1,10 @@
 import { Card } from 'react-bootstrap';
+import Badges from './Badges';
 import Calendar from './Calendar';
 import ShopCard from './Card';
 import HabitsView from './HabitsView';
 import './MainView.css'
+import YourHabitsSummary from './YourHabitsSummary';
 
 function MainView({mainViewState, handleMainViewState}) {
     return (
@@ -27,6 +29,20 @@ function MainView({mainViewState, handleMainViewState}) {
                     {/* <ShopCard/> */}
                 </div>
             </>
+        )}
+        {console.log(mainViewState)}
+        {mainViewState === 'badge' && (
+            <div className='badge-container'>
+                <div className='three-view'>
+                    <YourHabitsSummary/>
+                </div>
+                <div className='three-view strike-message semi-background'>
+                    Your biggest strike is 10 days! Excelent!
+                </div>
+                <div className='three-view'>
+                    <Badges/>
+                </div>
+            </div>
         )}
            
         </div>

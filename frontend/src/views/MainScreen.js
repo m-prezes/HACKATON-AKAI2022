@@ -9,6 +9,7 @@ function MainScreen(props) {
 
     function handleMainViewState(event) {
         console.log(event.currentTarget.value)
+        console.log(event.target.value)
         setMainViewState(event.currentTarget.value);
     }
 
