@@ -38,7 +38,7 @@ function MainView({mainViewState, handleMainViewState}) {
                     <YourHabitsSummary/>
                 </div>
                 <div className='three-view strike-message semi-background'>
-                    Your biggest strike is 10 days! Excelent!
+                    Your biggest strike is 10 days! Excellent!
                 </div>
                 <div className='three-view'>
                     <Badges/>
