@@ -2,7 +2,7 @@ import './HabitUndone.css'
 
 function HabitUndone() {
     return (
-        <input type="checkbox" class="form-check-input" id="materialUnchecked"/>
+        <input type="checkbox" class="check-input"/>
     )
 }
 
