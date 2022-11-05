@@ -15,6 +15,10 @@
     background-color: #ffc107;
 }
 
+.ranking-row {
+    border-bottom: 1px solid var(--light-gray);
+}
+
 .ranking-rows{
     padding: 0;
 }

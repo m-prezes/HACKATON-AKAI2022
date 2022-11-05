@@ -1,4 +1,4 @@
-input[type='checkbox'] {
+#collapsible {
     display: none;
 }
 
@@ -49,7 +49,7 @@ input[type='checkbox'] {
 
 .collapsible-content {
   max-height: 0px;
-  max-width: 0px;
+  width: 0px;
   overflow-y: scroll;
 
   transition: all .25s ease-in-out;
@@ -57,7 +57,7 @@ input[type='checkbox'] {
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
   max-height: 250px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .toggle:checked + .lbl-toggle::before {
@@ -73,7 +73,7 @@ input[type='checkbox'] {
   position: fixed;
   top: 10px;
   right: 10px;
-  width: 30%;
+  width: 35%;
 }
 
 .collapsible-container{
@@ -85,4 +85,38 @@ input[type='checkbox'] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.inner-input-wrapper{
+  width: 100%;
+}
+
+.inner-input{
+  width: 80%;
+}
+
+.inner-submit{
+  width: 20%;
+}
+
+.user-message{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-message .message{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: fit-content;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+}
+
+.bot-message .message{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: fit-content;
+  background-color: var(--lighter-gray);
+  border-radius: var(--border-radius);
 }

@@ -13,7 +13,6 @@ function Ranking(props) {
                 <div className='ranking-rows'>
                         {sampleRankingInfo.map((row) => (
                             <Container fluid>
-                                <hr style={{'padding':0, 'margin':0}}/>
                                 <Row className={`ranking-row ${sampleUserInfo.name == row.name ? 'is-user' : ''}`}>
                                     <Col md={2} className='center'>{row.rank}</Col>
                                     <Col md={8} className='center'>{row.name}</Col>

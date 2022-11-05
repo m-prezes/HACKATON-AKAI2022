@@ -11,7 +11,7 @@ function UserProfile(props) {
             <Container className="center user_icon_container" fluid>
                 <div>
                     <img src={default_user} alt="user_icon" className='user-image'/>
-                    <div className='user-coins center'>2137 $</div>
+                    <div className='user-coins center'>$ 2137</div>
                     <div className='user-level center'>1</div>
                 </div>
             </Container>
