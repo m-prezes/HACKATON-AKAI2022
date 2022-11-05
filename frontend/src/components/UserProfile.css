@@ -23,7 +23,8 @@
 }
 
 .points-progress-bar{
-    height: 25px;
+    margin-top: 5px;
+    height: 30px;
     width: 80%;
 }
 
@@ -50,11 +51,21 @@
     padding: 10px;
     position:absolute; 
     right: 115px; 
-    bottom: 75px;
+    bottom: 80px;
     border-radius: 15px;
-    border: 4px solid var(--third-color);
+    border: 3px solid black;
     font-weight: 600;
     font-size: 20px;
-
+    color: black;
     
+}
+
+.user-level-icon{
+    width: 80px;
+    height: auto;
+}
+
+.coins-image{
+    width: 30px;
+    height: 30px;
 }
