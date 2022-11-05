@@ -1,19 +1,22 @@
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import './Card.css'
 
-function ShopCard() {
+function ShopCard(props) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    // <Card className='card-style'>
+    //     <div className='xd'>
+    //   <Card.Img className='card-img-top' variant="top" src={props.src} style={{width: '100%'}}/>
+    //   </div>
+    //   <Card.Body>
+    //     <Card.Title>Blue fancy hat</Card.Title>
+    //     <Button variant="primary">$136</Button>
+    //   </Card.Body>
+    // </Card>
+    <div className='card-style'>
+        <img src={props.src} alt="obr" className='card-image'/>
+        <div className='card-title'>{props.title}</div>
+        <Button variant="primary" className='button-shop'>{props.price}</Button>
+    </div>
   );
 }
 
