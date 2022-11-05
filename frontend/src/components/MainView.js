@@ -3,6 +3,7 @@ import Badges from './Badges';
 import Calendar from './Calendar';
 import ShopCard from './Card';
 import HabitsView from './HabitsView';
+import Roulette from './Rolette';
 import './MainView.css'
 import YourHabitsSummary from './YourHabitsSummary';
 
@@ -22,7 +23,7 @@ function MainView({mainViewState, handleMainViewState}) {
         {mainViewState === 'shop' && (
             <>
                 <div className='roulette-container'>
-                    hej
+                    <Roulette />
                 </div>
                 <div className='shop-container'>
                     <HabitsView first="Your wardrobe" second="Shop" type="shop"/>

@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Chat.css';
-
-import chatMessages from '../sample_data/chatMessages'
+import { sendRequestAndGetResponse } from '../utils/sendRequestAndGetResponse';
 
 function Chat(props) {
 
     const [checked, setChecked] = useState(false);
     const [value, setValue] = useState("");
+    const [flag, setFlag] = useState(false);
     const chatMess = props.store.getState();
+
+    useEffect(() => {}, [flag])
 
     const updateScroll = () => {
         var element = document.getElementById("chat-collapse");
@@ -35,6 +37,7 @@ function Chat(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        const oldValue = value;
         props.store.dispatch({
             type: 'ADD_MESSAGE',
             owner: 'user',
@@ -44,11 +47,25 @@ function Chat(props) {
             updateScroll();
         }, 25)
         setValue("");
+        sendRequestAndGetResponse(oldValue)
+            .then(res => {
+                console.log(res);
+                props.store.dispatch({
+                    type: 'ADD_MESSAGE',
+                    owner: 'bot',
+                    message: res.message
+                })
+                setFlag(!flag);
+                setTimeout(() => {
+                    updateScroll();
+                }, 25)
+            });
     }
 
     const handleEnterClick = (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
+            const oldValue = value;
             props.store.dispatch({
                 type: 'ADD_MESSAGE',
                 owner: 'user',
@@ -58,6 +75,19 @@ function Chat(props) {
                 updateScroll();
             }, 25)
             setValue("");
+            sendRequestAndGetResponse(oldValue)
+            .then(res => {
+                console.log(res);
+                props.store.dispatch({
+                    type: 'ADD_MESSAGE',
+                    owner: 'bot',
+                    message: res.message
+                })
+                setFlag(!flag);
+                setTimeout(() => {
+                    updateScroll();
+                }, 25)
+            });
         }
     }
 
