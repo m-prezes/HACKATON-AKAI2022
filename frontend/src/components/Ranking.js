@@ -3,9 +3,13 @@ import {Row, Col, Container} from "react-bootstrap"
 import left_arrow from "../assets/left-arrow.png"
 import right_arrow from "../assets/right-arrow.png"
 import sampleRankingInfo from "../sample_data/sampleRankingInfo"
+import sampleRankingInfo2 from '../sample_data/sampleRankingInfo2'
 import sampleUserInfo from "../sample_data/sampleUserInfo"
+import { useState } from 'react'
 
 function Ranking(props) {
+
+    const [flag, setFlag] = useState(false);
 
     return (
         <Container className='ranking-container center'>

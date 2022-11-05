@@ -5,7 +5,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import goldMedal from '../assets/gold-medal.png';
 import coinsImage from '../assets/coins-image.png'
 
-function UserProfile({handleMainViewState}) {
+function UserProfile({handleMainViewState, coins}) {
+
     return (
        <Container>
         <Row>
@@ -13,7 +14,7 @@ function UserProfile({handleMainViewState}) {
                 <div>
                     <img src={userImage} alt="user_icon" className='user-image'/>
                         <Button variant='warning' className='user-coins center' value='shop' onClick={(e) => handleMainViewState(e)}>
-                            2137
+                            {coins}
                             <img src={coinsImage} className="coins-image"/>
                         </Button>
                     <button className='user-level center' value='badge' onClick={(e) => handleMainViewState(e)} style={{ backgroundImage: `url(${goldMedal})` }}>

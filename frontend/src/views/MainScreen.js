@@ -7,6 +7,8 @@ import './MainScreen.css'
 function MainScreen(props) {
     const [mainViewState, setMainViewState] = useState('habits');
 
+    const [coins, setCoins] = useState(200);
+
     function handleMainViewState(event) {
         console.log(event.currentTarget.value)
         console.log(event.target.value)
@@ -18,8 +20,8 @@ function MainScreen(props) {
         {mainViewState != 'habits' && (
         <Return handleMainViewState={handleMainViewState}/>
         )}
-        <Hero mainViewState={mainViewState} handleMainViewState={handleMainViewState}/>
-        <MainView mainViewState={mainViewState} handleMainViewState={handleMainViewState}/>
+        <Hero mainViewState={mainViewState} handleMainViewState={handleMainViewState} coins={coins}/>
+        <MainView mainViewState={mainViewState} handleMainViewState={handleMainViewState} coins={coins} onCoinChange={setCoins}/>
         </>
     )
 }

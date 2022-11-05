@@ -4,7 +4,7 @@ import StrikeComponent from './StrikeComponent';
 import Ranking from './Ranking';
 import {Row, Col, Container} from "react-bootstrap"
 
-function Hero({handleMainViewState}) {
+function Hero({handleMainViewState, coins}) {
     return (
         <Container fluid className='hero'>
            <Row>
@@ -12,7 +12,7 @@ function Hero({handleMainViewState}) {
                     <StrikeComponent />
                 </Col>
                 <Col md={4}>
-                    <UserProfile handleMainViewState={handleMainViewState} />
+                    <UserProfile handleMainViewState={handleMainViewState} coins={coins}/>
                 </Col>
                 <Col md={4} className='center'>
                     <Ranking />
