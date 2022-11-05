@@ -1,5 +1,5 @@
 const sampleUserInfo = {
-    "name": "Mateusz",
+    "name": "Martyna",
     "points": 310
 }
 

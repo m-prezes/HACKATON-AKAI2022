@@ -7,7 +7,7 @@ import Roulette from './Rolette';
 import './MainView.css'
 import YourHabitsSummary from './YourHabitsSummary';
 
-function MainView({mainViewState, handleMainViewState, userInfo,handleSetUserInfo}) {
+function MainView({mainViewState, handleMainViewState, userInfo,handleSetUserInfo, onCoinChange, coins}) {
     return (
         <div className='main-view'> 
         {mainViewState === 'habits' && (
@@ -23,7 +23,7 @@ function MainView({mainViewState, handleMainViewState, userInfo,handleSetUserInf
         {mainViewState === 'shop' && (
             <>
                 <div className='roulette-container'>
-                    <Roulette userInfo={userInfo} handleSetUserInfo={handleSetUserInfo}/>
+                    <Roulette userInfo={userInfo} handleSetUserInfo={handleSetUserInfo} onCoinChange={onCoinChange} coins={coins}/>
                 </div>
                 <div className='shop-container'>
                     <HabitsView first="Your wardrobe" second="Shop" type="shop" userInfo={userInfo} handleSetUserInfo={handleSetUserInfo}/>

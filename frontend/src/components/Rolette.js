@@ -10,7 +10,7 @@ import prize2 from '../assets/shop/hat-1.png'
 import prize3 from '../assets/shop/hat-2.png'
 import prize4 from '../assets/shop/new-avatar.png'
 
-import coins from '../assets/coins-image.png'
+import coinsImage from '../assets/coins-image.png'
 
 function Roulette(props) {
     const [ready, setReady] = useState(true)
@@ -58,7 +58,10 @@ function Roulette(props) {
   const prizeIndex = prizes.length * 4 + winPrizeIndex;
 
   const handleStart = () => {
-    setStart((prevState) => !prevState);
+    if( props.coins > 99) {
+        setStart((prevState) => !prevState);
+        props.onCoinChange(props.coins - 100)
+    }
   };
 
   const handlePrizeDefined = () => {
@@ -81,7 +84,7 @@ function Roulette(props) {
                     onPrizeDefined={handlePrizeDefined}
                 />
                 <Container className='center roulette-start'>
-                    <Button variant='warning' font='white' onClick={handleStart} className='roulette-start center'>Start (100<img src={coins} style={{width: 20}} />)</Button>
+                    <Button variant='warning' font='white' onClick={handleStart} className='roulette-start center'>Start (100<img src={coinsImage} style={{width: 20}} />)</Button>
                 </Container>
               </>
             ) : 

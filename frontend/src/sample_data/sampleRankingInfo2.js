@@ -1,14 +1,14 @@
 const sampleRankingInfo = [
     {
-        "rank": 1,
-        "name": "Marcinek",
-        "points": 345
+        "rank": 5,
+        "name": "Tobiasz",
+        "points": 340
     },
-    {   "rank": 2,
+    {   "rank": 6,
         "name": "Martyna",
-        "points": 320
+        "points": 310
     },
-    {   "rank": 3,
+    {   "rank": 7,
         "name": "Wojtek",
         "points": 289
     },
