@@ -3,5 +3,5 @@ export const getWeekAndCurrentDay = () => {
     const date = new Date();
     const today = date.getDay();
 
-    return [week, today]
+    return [week, 2]
 }
