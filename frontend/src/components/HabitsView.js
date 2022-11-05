@@ -51,8 +51,8 @@ function HabitsView(props) {
                     </>
                     :
                     <div className='cards-line'>
-                        <ShopCard src={img1} price="Put it on" title="Blue hat"/>
-                        <ShopCard src={img2} price="$200" title="Nice pinky hat"/>
+                        <ShopCard src={img1} price="$500" title="Blue hat"/>
+                        <ShopCard src={img2} price="$700" title="Nice pinky hat"/>
                         <ShopCard src={img3} price="$1620" title="Pinky hair"/>
                         <ShopCard src={imgavatar} price="$3000" title="Brajan avatar"/>
                         {/* <ShopCard src={img1} title="Nice hat"/> */}
