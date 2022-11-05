@@ -1,5 +1,5 @@
 .strike-component-container{
-    padding: 80px;
+    padding: 80px 20px;
     
 }
 
@@ -14,6 +14,7 @@
 .level-icon-container{
     display: flex;
     margin-bottom: 10px;
+
     border-radius: 5px 5px 0 0 ;
 }
 .level{

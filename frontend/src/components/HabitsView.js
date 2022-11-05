@@ -19,9 +19,9 @@ function HabitsView(props) {
                     <p>Your Daily Habits</p>
                 </div>
                 <div className='label-habits'>
-                    <HabitView img={maps} habitName="French learning"/>
-                    <HabitView img={mind} habitName="Studying for college"/>
-                    <HabitView img={travel} habitName="Cleaning my room"/>
+                    <HabitView isChechbox={false} img={maps} habitName="French learning" percent={40}/>
+                    <HabitView isChechbox={false} img={mind} habitName="Studying for college" percent={40}/>
+                    <HabitView isChechbox={true} img={travel} habitName="Cleaning my room" percent={40}/>
                 </div>
                 
             </div>
@@ -30,9 +30,9 @@ function HabitsView(props) {
                     <p>Your Weekly Habits</p>
                 </div>
                 <div className='label-habits'>
-                    <HabitView img={cycling} habitName="Riding a bike"/>
-                    <HabitView img={basketball} habitName="Basketball"/>
-                    <HabitView img={fitness} habitName="Running"/>
+                    <HabitView isChechbox={false} img={cycling} habitName="Riding a bike" percent={40}/>
+                    <HabitView isChechbox={false} img={basketball} habitName="Basketball" percent={40}/>
+                    <HabitView isChechbox={false} img={fitness} habitName="Running" percent={40}/>
                 </div>
             </div>
         </div>
