@@ -1,0 +1,42 @@
+.ranking-container{
+    padding: 80px 20px;
+}
+
+.ranking{
+    background-color: var(--background-color);
+    padding: 0;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.ranking-group{
+    padding: 10px;
+    background-color: #ffc107;
+}
+
+.ranking-rows{
+    padding: 0;
+}
+
+.icon-container{
+
+}
+.group-container{
+    font-weight: 600;
+}
+.arrow{
+    width: 20px;
+}
+
+.ranking-row{
+    padding: 10px;
+}
+
+.row-points{
+    font-weight: 600;
+}
+
+.is-user{
+    background-color: var(--lighter-gray);
+}

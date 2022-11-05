@@ -9,7 +9,7 @@ function StrikeComponent(props) {
 
 
     return (
-        <Container className='strike-component-container'>
+        <Container className='strike-component-container center'>
             <Container fluid className='strike-component'>
                 <Container fluid className='center'>
                     <div className='level-icon-container'>
