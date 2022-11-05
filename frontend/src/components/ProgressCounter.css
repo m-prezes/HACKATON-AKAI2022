@@ -1,0 +1,15 @@
+.green-progress {
+    width: 10%;
+    color: green;
+    margin-left: 20px;
+}
+
+.red-progress {
+    width: 10%;
+    color: rgb(213, 0, 0);
+    margin-left: 20px;
+}
+
+.clear-p {
+    margin: 0;
+}

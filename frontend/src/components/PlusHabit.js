@@ -1,5 +1,5 @@
 import './PlusHabit.css'
-import plus from './../assets/plus-one(2).png'
+import plus from './../assets/plus.png'
 
 function PlusHabit() {
     return (

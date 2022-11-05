@@ -1,8 +1,5 @@
-import baseball from '../assets/baseball.png'
 import basketball from '../assets/basketball.png'
-import chemistry from '../assets/chemistry.png'
 import cycling from '../assets/cycling.png'
-import eating from '../assets/eating.png'
 import fitness from '../assets/fitness.png'
 import maps from '../assets/maps.png'
 import mind from '../assets/mind.png'
@@ -17,17 +14,12 @@ const sampleData = [
     {
         "day":  0,
         "activity": mind,
-        "done": false
+        "done": true
     },
     {
         "day":  0,
         "activity": travel,
         "done": true
-    },
-    {
-       "day":  0,
-       "activity": baseball,
-       "done": true
     },
     {
         "day":  0,
@@ -37,7 +29,7 @@ const sampleData = [
     {
         "day":  1,
         "activity": maps,
-        "done": false
+        "done": true
     },
     {
         "day":  1,
@@ -47,11 +39,6 @@ const sampleData = [
     {
         "day":  1,
         "activity": travel,
-        "done": false
-    },
-    {
-        "day":  1,
-        "activity": chemistry,
         "done": true
     },
     {
@@ -62,7 +49,7 @@ const sampleData = [
     {
         "day":  2,
         "activity": mind,
-        "done": true
+        "done": false
     },
     {
         "day":  2,
@@ -70,7 +57,7 @@ const sampleData = [
         "done": true
     },
     {
-        "day":  2,
+        "day":  0,
         "activity": cycling,
         "done": true
     },
@@ -83,6 +70,11 @@ const sampleData = [
         "day":  3,
         "activity": mind,
         "done": false
+    },    
+    {
+        "day":  2,
+        "activity": cycling,
+        "done": true
     },
     {
         "day":  3,
@@ -120,8 +112,24 @@ const sampleData = [
         "done": true
     },
     {
+        "day":  4,
+        "activity": cycling,
+        "done": true
+    },
+    
+    {
         "day":  5,
         "activity": travel,
+        "done": true
+    },
+    {
+        "day":  4,
+        "activity": basketball,
+        "done": true
+    },
+    {
+        "day":  5,
+        "activity": fitness,
         "done": true
     },
     {
@@ -141,8 +149,8 @@ const sampleData = [
     },
     {
         "day":  6,
-        "activity": baseball,
-        "done": false
+        "activity": cycling,
+        "done": true
     },
     {
         "day":  6,
