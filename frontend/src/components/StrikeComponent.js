@@ -5,8 +5,9 @@ import level_strike from '../assets/level_strike.png'
 
 function StrikeComponent(props) {
     const days = [["MON",true],["TUE",true], ["WED",false], ["TH",false], ["FRI",false]]
+    const today = days.indexOf(days.find(day => day[1] == false))
 
-    
+
     return (
         <Container className='strike-component-container'>
             <Container fluid className='strike-component'>
@@ -18,8 +19,8 @@ function StrikeComponent(props) {
                 <Container>
                     <Row className="center day-strike-container">
                         <Col md={1}/>
-                            {days.map( ([day, isChecked]) =>(
-                                <DayStrike key={day} day={day} isChecked={isChecked}/>
+                            {days.map( ([day, isChecked], idx) =>(
+                                <DayStrike key={day} day={day} isChecked={isChecked} isToday={today==idx}/>
                             ))}
                         <Col md={1}/>
                     </Row>
