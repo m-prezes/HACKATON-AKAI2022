@@ -2,10 +2,9 @@ import axios from "axios";
 
 export const sendRequestAndGetResponse = async (chatMessage) => {
     let res = await axios({
-        url: 'http://172.23.96.1:8000',
+        url: 'http://127.0.0.1:8000',
         method: 'post',
         data: {message: chatMessage},
-        timeout: 8000,
         headers: {
             'Content-Type': 'application/json',
         }
@@ -15,6 +14,6 @@ export const sendRequestAndGetResponse = async (chatMessage) => {
         console.log(res.status)
     }    
     // Don't forget to return something   
-    return res.data
+    return res.data['response']
     
 }   
