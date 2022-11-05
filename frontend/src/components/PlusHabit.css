@@ -1,0 +1,9 @@
+.plus-one-icon {
+    margin-left: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.plus-one-icon:hover {
+    cursor: pointer;
+}
