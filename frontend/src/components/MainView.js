@@ -20,11 +20,11 @@ function MainView({mainViewState, handleMainViewState}) {
         {mainViewState === 'shop' && (
             <>
                 <div className='roulette-container'>
-                    {/* <HabitsView/> */}
                     hej
                 </div>
                 <div className='shop-container'>
-                    <ShopCard/>
+                    <HabitsView first="Your wardrobe" second="Shop" type="shop"/>
+                    {/* <ShopCard/> */}
                 </div>
             </>
         )}

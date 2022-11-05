@@ -1,0 +1,29 @@
+.card-style {
+    width: 15%;
+    height: 90%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.card-image {
+    width: 90px;
+    margin-top: 10px;
+}
+
+.card-title {
+
+}
+
+.button-shop {
+    height: 20%;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0;
+    border: 0;
+}

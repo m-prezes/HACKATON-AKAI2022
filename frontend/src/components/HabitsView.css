@@ -39,3 +39,11 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.cards-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 100%;
+    align-items: center;
+}
