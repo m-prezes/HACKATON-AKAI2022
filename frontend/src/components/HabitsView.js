@@ -15,9 +15,9 @@ function HabitsView(props) {
                     <p>Your Daily Habits</p>
                 </div>
                 <div className='label-habits'>
-                    <HabitView isChechbox={false} img={maps} habitName="French learning" percent={40}/>
-                    <HabitView isChechbox={false} img={mind} habitName="Studying for college" percent={40}/>
-                    <HabitView isChechbox={true} img={travel} habitName="Cleaning my room" percent={40}/>
+                    <HabitView isChechbox={false} img={maps} habitName="French learning" percent={0} points={0} denominator={1}/>
+                    <HabitView isChechbox={false} img={mind} habitName="Drinking water" percent={75}  points={6} denominator={8}/>
+                    <HabitView isChechbox={true} img={travel} habitName="Studying for college" percent={100}  points={1} denominator={1}/>
                 </div>
                 
             </div>
@@ -26,9 +26,9 @@ function HabitsView(props) {
                     <p>Your Weekly Habits</p>
                 </div>
                 <div className='label-habits'>
-                    <HabitView isChechbox={false} img={cycling} habitName="Riding a bike" percent={40}/>
-                    <HabitView isChechbox={false} img={basketball} habitName="Basketball" percent={40}/>
-                    <HabitView isChechbox={false} img={fitness} habitName="Running" percent={40}/>
+                    <HabitView isChechbox={false} img={cycling} habitName="Riding a bike" percent={50} points={2} denominator={4}/>
+                    <HabitView isChechbox={false} img={basketball} habitName="Basketball" percent={40} points={1} denominator={3}/>
+                    <HabitView isChechbox={false} img={fitness} habitName="Running" percent={0} points={0} denominator={2}/>
                 </div>
             </div>
         </div>
