@@ -47,7 +47,6 @@ function Chat(props) {
             updateScroll();
         }, 25)
         setValue("");
-        console.log(oldValue);
         sendRequestAndGetResponse(oldValue)
             .then(res => {
                 console.log(res);
@@ -66,6 +65,7 @@ function Chat(props) {
     const handleEnterClick = (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
+            const oldValue = value;
             props.store.dispatch({
                 type: 'ADD_MESSAGE',
                 owner: 'user',
@@ -75,6 +75,19 @@ function Chat(props) {
                 updateScroll();
             }, 25)
             setValue("");
+            sendRequestAndGetResponse(oldValue)
+            .then(res => {
+                console.log(res);
+                props.store.dispatch({
+                    type: 'ADD_MESSAGE',
+                    owner: 'bot',
+                    message: res.message
+                })
+                setFlag(!flag);
+                setTimeout(() => {
+                    updateScroll();
+                }, 25)
+            });
         }
     }
 

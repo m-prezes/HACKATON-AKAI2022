@@ -16,13 +16,14 @@ function UserProfile({handleMainViewState}) {
                             2137
                             <img src={coinsImage} className="coins-image"/>
                         </Button>
-                    <div className='user-level center' style={{ backgroundImage: `url(${goldMedal})` }}>
+                    <button className='user-level center' value='badge' onClick={(e) => handleMainViewState(e)} style={{ backgroundImage: `url(${goldMedal})` }}>
                         <img src={goldMedal} className='user-level-icon'/>
-                    </div>
+                    </button>
                 </div>
             </Container>
-            <Container fluid className="center">
+            <Container fluid className="center progress-bar-container">
                 <ProgressBar animated variant="warning" now={40} className="points-progress-bar"/>
+                <p className='level-tag'>Level 5</p>
             </Container>
                 
         </Row>

@@ -62,9 +62,26 @@
 .user-level-icon{
     width: 80px;
     height: auto;
+    cursor: pointer;
 }
 
 .coins-image{
     width: 30px;
     height: 30px;
+}
+
+.progress-bar-container{
+    position: relative;
+}
+
+.level-tag{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 20px;
 }
