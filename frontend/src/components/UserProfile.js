@@ -13,8 +13,8 @@ function UserProfile(props) {
                 <div>
                     <img src={userImage} alt="user_icon" className='user-image'/>
                         <Badge bg="warning" text="dark" className='user-coins center'>
-                            2137
                             <img src={coinsImage} className="coins-image"/>
+                            2137
                         </Badge>
                     <div className='user-level center' style={{ backgroundImage: `url(${goldMedal})` }}>
                         <img src={goldMedal} className='user-level-icon'/>
