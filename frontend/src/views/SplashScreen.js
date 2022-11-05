@@ -20,7 +20,7 @@ function SplashScreen(props){
             </div>
             <div>
                 <h2 className='splash-screen-text'>
-                    Congratulations! You have 3 day streak &#128293;
+                    Congratulations! You have 2 day streak &#128293;
                 </h2>
             </div>
         </div>
