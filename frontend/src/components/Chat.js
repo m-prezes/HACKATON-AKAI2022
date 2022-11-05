@@ -54,12 +54,12 @@ function Chat(props) {
                 props.store.dispatch({
                     type: 'ADD_MESSAGE',
                     owner: 'bot',
-                    message: res.message
+                    message: res
                 })
                 setFlag(!flag);
                 setTimeout(() => {
                     updateScroll();
-                }, 25)
+                }, 300)
             });
     }
 
