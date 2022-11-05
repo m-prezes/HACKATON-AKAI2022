@@ -99,6 +99,10 @@
   width: 20%;
 }
 
+.message{
+  word-break: break-all;
+}
+
 .user-message{
   width: 100%;
   display: flex;
