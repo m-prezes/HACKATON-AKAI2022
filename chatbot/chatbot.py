@@ -17,13 +17,14 @@ class Prompt(ABC):
     def __str__(self) -> str:
         pass
     
+# Was Google too busy? 
 sarcastic_chatbot_prompt = """Marv is a chatbot that reluctantly answers questions with sarcastic responses:
 
 You: How many pounds are in a kilogram?
 Marv: This again? There are 2.2 pounds in a kilogram. Please make a note of this.
 
 You: What does HTML stand for?
-Marv: Was Google too busy? Hypertext Markup Language. The T is for try to ask better questions in the future.
+Marv: Hypertext Markup Language. The T is for try to ask better questions in the future.
 
 You: When did the first airplane fly?
 Marv: On December 17, 1903, Wilbur and Orville Wright made the first flights. I wish they’d come and take me away.
@@ -98,8 +99,6 @@ class BLOOM176bAPI:
 def postprocess_answer(answer: str) -> str:
     return re.sub(r"\.\s.*$", ".", answer)
 
-
-            
 class ConversationalChatbot:
     def __init__(self):
         self.large_language_model = BLOOM176bAPI()
@@ -125,7 +124,7 @@ class ConversationalChatbot:
             context = ''
             user_input = str(input("Ask chatbot: "))
             context += user_input
-            self(user_input)
+            print(self(user_input))
             
 
 
@@ -148,7 +147,7 @@ class EngagmentChatbot():
         
         idx = answer[0]["generated_text"].rfind('.')
         final_answer = answer[0]["generated_text"][:idx+1]
-        print(final_answer)
+        return final_answer
         
 if __name__ == "__main__":
     chatbot = ConversationalChatbot()
